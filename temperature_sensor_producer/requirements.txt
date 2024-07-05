@@ -1,0 +1,2 @@
+confluent_kafka[avro]==1.9.0
+fastavro==1.4.7

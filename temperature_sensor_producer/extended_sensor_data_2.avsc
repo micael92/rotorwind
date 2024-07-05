@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "AdjustedSensorData",
+  "fields": [
+    {
+      "name": "machine_id",
+      "type": "int"
+    },
+    {
+      "name": "temperature_1",
+      "type": "float"
+    },
+    {
+      "name": "temperature_2",
+      "type": "float"
+    },
+    {
+      "name": "temperature_3",
+      "type": "float"
+    },
+    {
+      "name": "temperature_4",
+      "type": "float"
+    },
+    {
+      "name": "temperature_5",
+      "type": "float"
+    },
+    {
+      "name": "utilization",
+      "type": "float"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "adjusted-influxdb-sink-connector",
+  "config": {
+    "connector.class": "io.confluent.influxdb.InfluxDBSinkConnector",
+    "tasks.max": "1",
+    "topics": "adjusted_temperature_data",
+    "influxdb.url": "http://influxdb:8086",
+    "influxdb.db": "temperature_db",
+    "influxdb.username": "admin",
+    "influxdb.password": "admin",
+    "influxdb.retention.policy": "autogen",
+    "influxdb.consistency.level": "ONE",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url": "http://schema-registry:8081",
+    "measurement.name.format": "${topic}",
+    "influxdb.tags": "machine_id",
+    "influxdb.fields": "temperature_1,temperature_2,temperature_3,temperature_4,temperature_5,utilization",
+    "influxdb.timestamp": "timestamp",
+    "influxdb.timestamp.units": "milliseconds"
+  }
+}
